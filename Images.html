@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Images</title>
+  </head>
+  <body>
+    <!--Simple image-->
+    <h3>Просто картинка</h3>
+    <img style="width: 300px" src="image/картинка1.png" alt="image" />
+    <!--Responsive image-->
+    <h2>
+      Тэг picture используется как обертка для нескольких одинаковых картинок в
+      адаптивном дизайне
+    </h2>
+    <picture>
+      <source media="(min-width: 1024px )" srcset="image/картинка2.png" />
+      <source media="(min-width: 768px)" srcset="image/картинка3.png" />
+      <source media="(min-width: 360px)" srcset="image/картинка4.png" />
+      <img style="width: 300px" src="image/картинка1.png" alt="image" />
+    </picture>
+    <!--Image with semantic-->
+    <h2>Картинка с семантикой</h2>
+    <figure>
+      <img style="width: 300px" src="image/картинка1.png" alt="image" />
+      <figcaption>Описание картинки пишется внутри figcaption</figcaption>
+    </figure>
+  </body>
+</html>
