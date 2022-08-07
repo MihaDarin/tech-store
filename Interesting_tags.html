@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Интересные и полезные теги</title>
+  </head>
+  <body style="font-size: 20px">
+    <!--Abbreviation-->
+    <p>
+      Тег abbr используется для обертки аббревиатуры, в атрибуте type
+      указывается расшифровка аббревиатуры, например
+      <abbr title="Don't Repeat Yourself">DRY</abbr> обернут в такой тег
+    </p>
+    <hr />
+    <!--List of options-->
+    <p>Тег datalist позволяет добавить поле с опциями, создается так: 
+    <pre>
+        <code>
+            input list="list" 
+            datalist id="list"
+        </code>
+    </pre>  
+    </p>
+    <p>выглядит так:</p>
+    <input list="list" />
+    <datalist id="list">
+      <option value="Pizza"></option>
+      <option value="Pirozhok"></option>
+      <option value="Coffee"></option>
+    </datalist>
+    <hr />
+    <!--Meter-->
+    <p>Тег meter используется для изображения прогресса на разных шкалах</p>
+    <meter value="20" max="100" low="40" high="60"></meter>
+    <br />
+    <meter value="50" max="100" low="40" high="60"></meter>
+    <hr />
+    <!--Progress bar-->
+    <p>Тег progress используется для изображения прогресса на одной шкале</p>
+    <progress value="40" max="100"></progress>
+    <hr />
+    <!--Marked text-->
+    <mark>Для маркировки текст можно обернуть в тег mark</mark>
+    <hr />
+    <!--Canvas-->
+    <p>Тег canvas используется для рисунков и прочихх подвижных объектов, управляется с помощью JS</p>
+    <canvas style="background-color: #000;" width="200" height="200"></canvas>
+  </body>
+</html>
